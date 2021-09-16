@@ -4,7 +4,7 @@
 // Date:				9/16/21
 // Class:				CS150-1
 // Assignment:	A Mortgage Calculator
-// Purpose:			Calulate loan imfromation
+// Purpose:			Calculate loan information
 // Hours:				1.5
 //**********************************************************************
 
@@ -13,14 +13,13 @@
 
 using namespace std;
 
-int main(){
-
+int main() {
 	double loan;
 	double rate;
 	double payment;
 	double months;
 	double years;
-	
+
 	cout << "*******************" << endl;
 	cout << "Mortgage Calculator" << endl;
 	cout << "*******************" << endl;
@@ -42,7 +41,7 @@ int main(){
 		return EXIT_SUCCESS;
 	}
 
-	//Retieve years and check that it is positive
+	//Retrieve years and check that it is positive
 	cout << "Enter Number Of Years: ";
 	cin >> years;
 	if (years < 0) {
@@ -53,7 +52,7 @@ int main(){
 	//convert rate into simple double from %6 to .06 to .005
 	rate = rate / 100 / 12;
 
-	//years to months 
+	//years to months
 	months = years * 12;
 
 	//equation finds monthly payment of any loan
@@ -67,5 +66,4 @@ int main(){
 	cout << "**************************************" << endl;
 
 	return EXIT_SUCCESS;
-
-} 
+}
