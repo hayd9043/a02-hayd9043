@@ -35,7 +35,7 @@ int main(){
 
 	cout << "Enter Interest Rate: %";
 	cin >> rate;
-	if (rate < 0 || rate > 100) {
+	if (rate < 0) {
 		cout << "Incorrect Input - Terminating Program" << endl;
 		return EXIT_SUCCESS;
 	}
@@ -51,6 +51,8 @@ int main(){
 
 	//convert rate into simple double from %6 to .06 to .005
 	rate = rate / 100 / 12;
+
+	//years to months 
 	months = years * 12;
 
 	//equation finds monthly payment of any loan
